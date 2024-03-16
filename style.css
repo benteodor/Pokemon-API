@@ -1,60 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: #333333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Caveat", cursive;
-  margin: 0;
-}
-
-a {
-  margin-top: 2rem;
-}
-
-h2 {
-  color: #d6c887;
-}
-
-h2:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.search {
-  width: 270px;
-  height: 40px;
-  outline: none;
-  margin: 1.5rem;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #d6c887;
-  border-top: 2px solid #d6c887;
-  border-radius: 50px;
-  line-height: 1.2rem;
-  font-size: 1.4rem;
+  background: url("http://source.unsplash.com/pZXg_ObLOM4") no-repeat fixed
+    center center/cover;
+  font-family: "Open Sans", sans-serif;
+  margin: 5rem;
   text-align: center;
-  color: #d6c887;
-  letter-spacing: 2px;
-  font-family: "Caveat", cursive;
 }
 
-.search:hover {
-  cursor: pointer;
-  background-color: white;
-}
-
-.search::placeholder {
+h1 {
   text-align: center;
-  color: #d6c887;
-  letter-spacing: 2px;
-  font-family: "Caveat", cursive;
+  margin-bottom: 5rem;
 }
 
 .data {
@@ -64,4 +24,41 @@ h2:hover {
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   color: white;
+}
+
+.data div {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgb(169, 169, 169);
+  border-radius: 5px;
+  text-align: center;
+}
+.data div:hover {
+  box-shadow: 0 0 10px rgb(99, 99, 99);
+}
+.data div:hover img {
+  filter: saturate(1);
+}
+.data div:hover h2 {
+  background-color: #3b4cca;
+}
+
+.data h2 {
+  background-color: #464856;
+  border-radius: 0 0 5px 5px;
+  padding: 1rem;
+}
+
+.data img {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  filter: saturate(0.1);
+}
+input {
+  padding: 1rem;
+  font-family: inherit;
+  margin: 2rem auto;
+}
+div.card {
+  background-color: #464856;
 }
